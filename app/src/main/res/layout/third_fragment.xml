@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/redseek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:progressTint="@color/red"
+        android:min="0"
+        android:max="255"
+        android:thumb="@drawable/red_thumb"
+        android:layout_marginBottom="5dp"
+        android:progressDrawable="@drawable/red_drawable"/>
+
+    <SeekBar
+        android:id="@+id/greenseek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="255"
+        android:backgroundTint="@color/grey"
+        android:thumb="@drawable/green_thumb"
+        android:progressTint="@color/green"
+        android:layout_marginBottom="5dp"
+        android:progressDrawable="@drawable/green_drawable"/>
+
+    <SeekBar
+        android:id="@+id/blueseek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:min="0"
+        android:max="255"
+        android:thumb="@drawable/blue_thumb"
+        android:progressTint="@color/blue"
+        android:layout_marginBottom="5dp"
+        android:progressDrawable="@drawable/blue_drawable"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeColor"
+        android:text="Change Color"/>
+
+</LinearLayout>
